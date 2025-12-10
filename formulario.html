@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body id="form">
+    <h1 id="titulo">
+        Formulario de contacto
+    </h1>
+    <form action="formulario.php" method="POST">
+        <fieldset>
+            <legend>
+                Tus Datos
+            </legend>
+            <label for="nombre">Nombre y apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="50">
+            <br><br>
+            <label for="passord">Contraseña:</label>
+            <input type="password" id="password" name="password" required maxlength="8">
+            <br><br>
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario" value="Anónimo" disabled>
+            <br><br>
+            <label for="nivel">Nivel:</label>
+            <br>
+            <input type="radio" id="nivel" name="nivel" value="principiante"> Principiante
+            <br>
+            <input type="radio" id="nivel" name="nivel" value="avanzado" checked> Avanzado
+            <br>
+            <input type="radio" id="nivel" name="nivel" value="profesional"> Profesional
+        </fieldset>
+        <br>
+        <label for="nacionalidad">Nacionalidad</label>
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="1" selected>España</option>
+            <option value="2">Francia</option>
+            <option value="3">Italia</option>
+            <option value="4">Alemania</option>
+            <option value="5">Portugal</option>
+        </select>
+        <br><br>
+        <label for="descripcion">Descripción</label>
+        <br>
+        <textarea name="descripcion" id="descripcion" rows="10" cols="50"></textarea>
+        <br><br>
+        <label for="info"></label>
+        <input type="checkbox" name="info" id="info" checked> Deseo recibir información sobre novedades y ofertas.
+        <br><br>
+        <input type="checkbox" name="condiciones" id="condiciones"> Declaro que he leído y acepto las condiciones del servicio así como la protección de datos.
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+    <br>
+    <a href="index.html"><Button>Página Principal</Button></a>
+</body>
+</html>
